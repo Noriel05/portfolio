@@ -4,100 +4,100 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Noriel C. Espiritu | Junior Web Developer</title>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="topbar"><div class="wrap">
-  <a class="brand" href="#top">Noriel<span>.</span>E</a>
-  <nav class="menu" aria-label="Sections">
-    <a href="#about">About me</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
-  </nav>
-</div></div>
-
-<header class="hero" id="top"><div class="wrap">
-  <div>
-    <p class="eyebrow">Junior Web Developer</p>
-    <h1>Noriel <span>C. Espiritu</span></h1>
-    <p class="lead">I build web apps with React and FastAPI, and I care about making technology that people can actually use.</p>
-    <ul class="pills" aria-label="Focus areas"><li>React</li><li>FastAPI</li><li>AI-powered web apps</li></ul>
-    <div class="btns"><a class="btn primary" href="#projects">View my work</a><a class="btn ghost" href="#contact">Get in touch</a></div>
-  </div>
-  <aside class="card-hero" aria-label="Quick facts">
-    <div class="who"><div class="avatar" aria-hidden="true">NE</div><div><strong>Noriel C. Espiritu</strong><small>Junior Web Developer</small></div></div>
-    <span class="status">Open to opportunities</span>
-    <ul class="facts">
-      <li><b>Location</b><span>Baguio City, PH</span></li>
-      <li><b>Education</b><span>BS Information Technology</span></li>
-      <li><b>School</b><span>STI College Baguio</span></li>
-      <li><b>Focus</b><span>React + FastAPI</span></li>
-    </ul>
+<div class="layout">
+  <aside class="side">
+    <div>
+      <div class="mono" aria-hidden="true">N.E</div>
+      <h1 class="name">Noriel C. Espiritu</h1>
+      <p class="role">Junior Web Developer</p>
+      <nav aria-label="Sections">
+        <a href="#about"><span>01</span>About me</a>
+        <a href="#skills"><span>02</span>Skills</a>
+        <a href="#experience"><span>03</span>Experience</a>
+        <a href="#projects"><span>04</span>Projects</a>
+        <a href="#contact"><span>05</span>Contact</a>
+      </nav>
+    </div>
+    <div class="side-foot">
+      <p>Baguio City, Philippines</p>
+      <a href="mailto:noriel85@gmail.com">noriel85@gmail.com</a>
+    </div>
   </aside>
+
+  <main>
+    <div class="intro">
+      <p class="kicker">Portfolio</p>
+      <p class="statement">I build web apps that people can <em>actually use.</em></p>
+      <p class="sub">I work with React and FastAPI, from the interface people click through to the API behind it.</p>
+      <div class="links"><a href="#projects">See my work</a><a href="#contact">Get in touch</a></div>
+    </div>
+
+    <section id="about">
+      <div class="head"><span class="num">01</span><h2>About me</h2></div>
+      <div class="about">
+        <p>I’m a BS Information Technology student at STI College Baguio, based in Baguio City. I enjoy building complete web products, from the interface people click through to the API behind it.</p>
+        <p>My capstone, SENYASK, taught me how to take an idea from design to deployment. I’m looking for an opportunity to apply and grow my skills in a professional team, gain hands-on experience, and keep learning.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="head"><span class="num">02</span><h2>Skills</h2></div>
+      <div class="cols">
+        <div><h3>Front-end</h3><ul class="list"><li>React</li><li>Vite</li><li>JavaScript</li><li>HTML/CSS</li><li>Responsive design</li></ul></div>
+        <div><h3>Back-end</h3><ul class="list"><li>FastAPI (Python)</li><li>REST APIs</li><li>scikit-learn</li></ul></div>
+        <div><h3>Working style</h3><ul class="list"><li>Problem-solving</li><li>Analytical thinking</li><li>Adaptability</li><li>Teamwork</li><li>Time management</li></ul></div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="head"><span class="num">03</span><h2>Experience</h2></div>
+      <div class="row">
+        <p class="when"><b>Capstone</b>STI College Baguio</p>
+        <div>
+          <h3>Front-end &amp; back-end developer, SENYASK</h3>
+          <ul class="plain">
+            <li>Built the React and Vite front-end, including the camera-based translator, quizzes, and gesture-practice modules.</li>
+            <li>Developed the FastAPI and scikit-learn back-end for real-time sign language recognition.</li>
+            <li>Contributed to the logo, color palette, and typography, and deployed the app on Firebase Hosting and Render.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <p class="when"><b>Education</b>STI College Baguio</p>
+        <div>
+          <h3>BS Information Technology</h3>
+          <p>Hands-on coursework and group projects in web development, with an emphasis on teamwork and working under deadlines.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="head"><span class="num">04</span><h2>Projects</h2></div>
+      <article class="feature">
+        <p class="big">SENYASK</p>
+        <p class="tagline">Filipino Sign Language web platform</p>
+        <p>An AI-powered web platform that translates Filipino Sign Language (FSL) in real time, alongside a full learning and practice experience, so people can both translate signs and learn them.</p>
+        <ul class="plain">
+          <li>Public multi-page site, camera-based translator, quizzes, and gesture-practice modules</li>
+          <li>Real-time sign recognition served through a FastAPI back-end</li>
+          <li>Front-end on Firebase Hosting, back-end on Render</li>
+        </ul>
+        <p class="stack">React · Vite · FastAPI · scikit-learn · Firebase · Render</p>
+      </article>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="head"><span class="num">05</span><h2>Contact</h2></div>
+      <p>I’m open to opportunities where I can learn and contribute. Send me a message:</p>
+      <a class="mail" href="mailto:noriel85@gmail.com">noriel85@gmail.com</a>
+    </section>
+
+    <footer>© Noriel C. Espiritu · Baguio City, Philippines</footer>
+  </main>
 </div>
-  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0,30 C360,70 1080,-10 1440,30 L1440,60 L0,60 Z"/></svg>
-</header>
-
-<section id="about"><div class="wrap">
-  <p class="tag">Who I am</p><h2>About me</h2>
-  <div class="about">
-    <p>I’m a BS Information Technology student at STI College Baguio, based in Baguio City. I enjoy building complete web products, from the interface people click through to the API behind it.</p>
-    <p>My capstone, SENYASK, taught me how to take an idea from design to deployment. I’m looking for an opportunity to apply and grow my skills in a professional team, gain hands-on experience, and keep learning.</p>
-  </div>
-</div></section>
-
-<section id="skills" class="alt"><div class="wrap">
-  <p class="tag">What I work with</p><h2>Skills</h2>
-  <div class="grid3">
-    <div class="card t"><h3>Front-end</h3><ul class="chips"><li>React</li><li>Vite</li><li>JavaScript</li><li>HTML/CSS</li><li>Responsive design</li></ul></div>
-    <div class="card a"><h3>Back-end</h3><ul class="chips"><li>FastAPI (Python)</li><li>REST APIs</li><li>scikit-learn</li></ul></div>
-    <div class="card n"><h3>Working style</h3><ul class="chips"><li>Problem-solving</li><li>Analytical thinking</li><li>Adaptability</li><li>Teamwork</li><li>Time management</li></ul></div>
-  </div>
-</div></section>
-
-<section id="experience"><div class="wrap">
-  <p class="tag">My journey</p><h2>Experience</h2>
-  <div class="timeline">
-    <div class="item">
-      <h3>Front-end &amp; back-end developer, SENYASK</h3>
-      <p class="meta">Capstone project · STI College Baguio</p>
-      <ul class="plain">
-        <li>Built the React and Vite front-end, including the camera-based translator, quizzes, and gesture-practice modules.</li>
-        <li>Developed the FastAPI and scikit-learn back-end for real-time sign language recognition.</li>
-        <li>Contributed to the logo, color palette, and typography, and deployed the app on Firebase Hosting and Render.</li>
-      </ul>
-    </div>
-    <div class="item">
-      <h3>BS Information Technology</h3>
-      <p class="meta">STI College Baguio</p>
-      <p>Hands-on coursework and group projects in web development, with an emphasis on teamwork and working under deadlines.</p>
-    </div>
-  </div>
-</div></section>
-
-<section id="projects" class="alt"><div class="wrap">
-  <p class="tag">Selected work</p><h2>Projects</h2>
-  <article class="card project">
-    <div class="banner"><div><div class="big" aria-hidden="true">🤟</div><b>SENYASK</b><small>Filipino Sign Language</small></div></div>
-    <div class="body">
-      <h3>SENYASK: FSL web platform</h3>
-      <p class="meta">Capstone project</p>
-      <p>An AI-powered web platform that translates Filipino Sign Language (FSL) in real time, alongside a full learning and practice experience, so people can both translate signs and learn them.</p>
-      <ul class="plain">
-        <li>Public multi-page site, camera-based translator, quizzes, and gesture-practice modules</li>
-        <li>Real-time sign recognition served through a FastAPI back-end</li>
-        <li>Front-end on Firebase Hosting, back-end on Render</li>
-      </ul>
-      <ul class="chips" style="margin-top:1rem"><li>React</li><li>Vite</li><li>FastAPI</li><li>scikit-learn</li><li>Firebase</li><li>Render</li></ul>
-    </div>
-  </article>
-</div></section>
-
-<section id="contact" class="contact"><div class="wrap">
-  <h2>Let’s work together</h2>
-  <p>I’m open to opportunities where I can learn and contribute. Send me a message.</p>
-  <a class="btn primary" href="mailto:noriel85@gmail.com">noriel85@gmail.com</a>
-</div></section>
-
-<footer>© Noriel C. Espiritu · Baguio City, Philippines</footer>
 </body>
 </html>
